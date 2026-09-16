@@ -41,6 +41,4 @@ O login usa autenticação por cookie; a senha é armazenada por hash com `Passw
 
 **Repositório:** [Trabalho_Back_End](https://github.com/KellvinM/Trabalho_Back_End)
 
-**Vídeo demonstrativo:** `COLOCAR_LINK_DO_VIDEO_AQUI`
-
-Antes de entregar, substitua o marcador acima pelo vídeo real gravado via Loom, YouTube ou similar, mostrando cadastro, login e CRUD de consultas. O representante do grupo deve enviar no portal um PDF com os participantes em ordem alfabética e os links do repositório, [deste README](https://github.com/KellvinM/Trabalho_Back_End/blob/main/README.md) e do vídeo. O link do vídeo e os nomes precisam ser preenchidos com os dados reais do grupo.
+**Vídeo demonstrativo:** [Assistir no YouTube](https://www.youtube.com/watch?v=uwMi62-fBz4)
