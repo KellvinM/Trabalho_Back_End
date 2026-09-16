@@ -39,6 +39,8 @@ O login usa autenticação por cookie; a senha é armazenada por hash com `Passw
 
 ## Demonstração e entrega
 
-**Vídeo demonstrativo:** [Adicionar link do vídeo após a gravação](COLOCAR_LINK_DO_VIDEO_AQUI)
+**Repositório:** [Trabalho_Back_End](https://github.com/KellvinM/Trabalho_Back_End)
 
-Antes de entregar, substitua o link acima pelo vídeo real gravado via Loom, YouTube ou similar, mostrando cadastro, login e CRUD de consultas. Publique o projeto em um repositório GitHub acessível ao professor. O representante do grupo deve enviar no portal um PDF com os participantes em ordem alfabética e os links do repositório, deste README e do vídeo. Esses links e os nomes precisam ser preenchidos com os dados reais do grupo.
+**Vídeo demonstrativo:** `COLOCAR_LINK_DO_VIDEO_AQUI`
+
+Antes de entregar, substitua o marcador acima pelo vídeo real gravado via Loom, YouTube ou similar, mostrando cadastro, login e CRUD de consultas. O representante do grupo deve enviar no portal um PDF com os participantes em ordem alfabética e os links do repositório, [deste README](https://github.com/KellvinM/Trabalho_Back_End/blob/main/README.md) e do vídeo. O link do vídeo e os nomes precisam ser preenchidos com os dados reais do grupo.
