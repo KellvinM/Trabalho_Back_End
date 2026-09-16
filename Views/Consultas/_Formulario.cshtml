@@ -1,0 +1,12 @@
+@model ConsultaViewModel
+<div asp-validation-summary="ModelOnly" class="validation"></div>
+<input asp-for="Id" type="hidden" />
+<label asp-for="Especialidade">Especialidade</label>
+<input asp-for="Especialidade" placeholder="Ex.: Cardiologia" />
+<span asp-validation-for="Especialidade" class="validation"></span>
+<label asp-for="DataHora">Data e hora</label>
+<input asp-for="DataHora" type="datetime-local" value="@Model.DataHora.ToString("yyyy-MM-ddTHH:mm")" />
+<span asp-validation-for="DataHora" class="validation"></span>
+<label asp-for="Descricao">Descrição</label>
+<textarea asp-for="Descricao" rows="5" placeholder="Informações sobre a consulta"></textarea>
+<span asp-validation-for="Descricao" class="validation"></span>

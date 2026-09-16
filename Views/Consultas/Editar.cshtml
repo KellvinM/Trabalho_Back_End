@@ -1,0 +1,6 @@
+@model ConsultaViewModel
+@{ ViewData["Title"] = "Editar consulta"; }
+<div class="card narrow"><span class="eyebrow">MINHA AGENDA</span><h1>Editar consulta</h1><p class="muted">Atualize os dados do compromisso.</p>
+    <form asp-action="Editar" asp-route-id="@Model.Id" method="post"><partial name="_Formulario" model="Model" /><button class="button full" type="submit">Salvar alterações</button></form>
+    <p class="form-footer"><a asp-action="Index">Voltar às consultas</a></p>
+</div>

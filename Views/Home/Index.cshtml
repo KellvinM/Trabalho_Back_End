@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Início";
+}
+<section class="hero">
+    <div class="hero-copy">
+        <span class="eyebrow">SISTEMA DE GESTÃO DE CONSULTAS</span>
+        <h1>Suas consultas em um só lugar.</h1>
+        <p>Cadastre-se, agende uma consulta e acompanhe seus compromissos com facilidade.</p>
+        <div class="actions">
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <a class="button" asp-controller="Consultas" asp-action="Index">Ver minhas consultas</a>
+                <a class="button secondary" asp-controller="Consultas" asp-action="Criar">Nova consulta</a>
+            }
+            else
+            {
+                <a class="button" asp-controller="Conta" asp-action="Cadastro">Começar agora</a>
+                <a class="button secondary" asp-controller="Conta" asp-action="Login">Já tenho conta</a>
+            }
+        </div>
+    </div>
+    <div class="hero-card">
+        <div class="calendar-icon">✦</div>
+        <h2>Organize sua agenda</h2>
+        <p>Registre especialidade, data, horário e descrição. Edite ou exclua sempre que precisar.</p>
+    </div>
+</section>

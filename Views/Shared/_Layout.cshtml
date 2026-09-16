@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] — Consultas UVV</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav">
+            <a class="brand" asp-controller="Home" asp-action="Index">Consultas <strong>UVV</strong></a>
+            <div class="nav-links">
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <a asp-controller="Consultas" asp-action="Index">Minhas consultas</a>
+                    <span class="username">Olá, @User.Identity.Name</span>
+                    <form asp-controller="Conta" asp-action="Sair" method="post">
+                        <button class="text-button" type="submit">Sair</button>
+                    </form>
+                }
+                else
+                {
+                    <a asp-controller="Conta" asp-action="Login">Entrar</a>
+                    <a class="nav-cta" asp-controller="Conta" asp-action="Cadastro">Criar conta</a>
+                }
+            </div>
+        </div>
+    </header>
+    <main class="container main">
+        @if (TempData["Mensagem"] is string mensagem)
+        {
+            <div class="notice" role="status">@mensagem</div>
+        }
+        @RenderBody()
+    </main>
+    <footer class="footer container">Sistema de Gestão de Consultas UVV · Trabalho prático de Desenvolvimento Web Back-end</footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
